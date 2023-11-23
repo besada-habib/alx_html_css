@@ -392,7 +392,10 @@ ul.row {
     list-style: none;
     text-align: center;
 }
-.nav-item + .nav .nav-item{
+.nav .nav-item{
+    margin: var(--nav-item-margin);
+}
+.nav-item{
     margin: var(--nav-item-margin);
 }
 
