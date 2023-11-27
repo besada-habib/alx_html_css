@@ -1,4 +1,11 @@
 /*Variables*/
+:root {
+  --link-hover-active: #ff6565;
+  --color-white: white;
+  --button-opacity-hover-active: 0.9;
+  --main-font-family: 'Source Sans Pro', sans-serif;
+}
+
 @font-face {
   font-family: 'holberton_school-icon';
   src: url('fonts/holberton_school-icon.eot?sq4eq4');
@@ -26,11 +33,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-  /* base */
-  *, *:before, *:after {
-    box-sizing: border-box;
+/* base */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-  
+html {
+  scroll-behavior: smooth;
+  /* font-size: 60%; */
+}
+.button {
+  background: var(--link-hover-active);
+  color: var(--color-white);
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 162px;
+  height: 44px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
 
 $icomoon-font-family: "holberton_school-icon" !default;
 $icomoon-font-path: "fonts" !default;
@@ -89,13 +115,22 @@ body {
   text-align: center;
 }
 
+
 /* HEADER */
+.header_container .logo {
+  width: 161px;
+  height: 32px;
+}
+.nav {
+  min-block-size: 100px;
+  margin-block-end: 225px;
+}
 .hero {
   background-image: url('headphones/images/headphones_hero_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 1480px*920px;
- max-block-size: 800px;
+  max-block-size: 800px;
 
 }
 
@@ -106,22 +141,35 @@ body {
   padding-top: 1em;
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.toggle_btn {
+  display: none;
 }
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 255px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
 .nav-item {
   gap: 401px;
   color: white;
+  text-decoration: none;
 }
+
 .nav-item a {
   color: white;
   font-size: 12px;
   font-family: Source Sans Pro;
   font-weight: 700;
 }
+
+
 
 .paragraphs {
   display: flex;
@@ -147,20 +195,7 @@ body {
   word-wrap: break-word
 }
 
-.button {
-  border: none;
-  border-radius: 25px;
-  font-family: var(--font-family-base);
-  letter-spacing: .5px;
-  color: white;
-  block-size: 48px;
-  inline-size: 160px;
-  text-transform: uppercase;
-  width: 200px;
-  height: 48px;
-  background: #FF6565;
-  border-radius: 22px
-}
+
 
 .p2 {
   color: white;
@@ -172,17 +207,33 @@ body {
   max-width: 1000px;
   max-height: 200px;
 }
-.icons{
+
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
 }
-.head_of_what_we_do{
+
+.head_of_what_we_do {
   padding-bottom: 150px;
 }
-.pentagon{
+
+.pentagon_section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.our_results_section {
+  height: 650px;
+  color: #FFFFFF;
+  /* padding-top: 10%; */
+  background-image: url(./headphones/images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
 }
