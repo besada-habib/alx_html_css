@@ -181,8 +181,8 @@ body {
 .head_of_what_we_do{
   padding-bottom: 150px;
 }
-.dot{
+.pentagon{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
