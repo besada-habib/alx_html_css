@@ -116,7 +116,10 @@ body {
     background: #fff;
     text-align: center;
 }
-
+.logo{
+    width: 161px;
+    height: 32px;
+}
 
 /* HEADER */
 .header_container .logo {
@@ -124,18 +127,18 @@ body {
     height: 32px;
 }
 
-    .hero {
-        background-image: url('headphones/images/headphones_hero_1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-size: 1920px 1080px;
-        max-height: 920px;
-      }
+.hero {
+    background-image: url('headphones/images/headphones_hero_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 1920px 1080px;
+    max-height: 920px;
+}
 
 .nav {
     min-block-size: 100px;
     margin-block-end: 225px;
-  }
+}
 
 .header_container {
     display: flex;
@@ -224,16 +227,19 @@ body {
     align-items: center;
 
 }
-.head_of_what_we_do p{
+
+.head_of_what_we_do p {
     max-width: 1000px;
 }
+
 .icons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     max width: 100px;
 }
+
 /*our results*/
 .pentagon_section {
     display: flex;
@@ -258,17 +264,20 @@ body {
     justify-content: center;
     line-height: 1.5;
 }
-.our_results_h{
+
+.our_results_h {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   align-items: center;
+    align-items: center;
     min-block-size: 100px;
     margin-block-end: 225px;
 }
-.p3{
+
+.p3 {
     max-width: 1000px;
 }
+
 /*contact us section*/
 .contact_us_section {
     display: flex;
@@ -302,4 +311,25 @@ input::placeholder {
 
 .contact_us_section h2 {
     color: #071629;
+}
+
+/*footer*/
+.footer {
+    position: relative;
+    block-size: 240px;
+    background-color: #071629;
+
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+    min-block-size: 100px;
+
+}
+.copyright-text{
+   padding-top: 90px; 
+    color: white;
 }
