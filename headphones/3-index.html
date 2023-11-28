@@ -15,21 +15,23 @@
 <body>
     <!-- HEADER -->
     <section class="hero">
-        <nav class="nav">
-            <div class="header_container">
-                <a href=""><img src="headphones/images/logo_headphones.jpg" class="logo" alt="logo_headphones"></a>
+        <nav class="header">
+            <div class="wrapper header_container">
+                <!-- Responsive menu for all screen sizes -->
+                <input type="checkbox" id="open-menu">
+                <label for="open-menu" class="nav-icon">
+                    <div class="bar-icon"></div>
+                </label>
+                <a href=""><img src="./headphones/images/logo_headphones.jpg" class="logo" alt="logo_headphones"></a>
                 <ul class="nav-list">
                     <!-- NAVBAR -->
                     <li class="nav-item"><a href="#what_we_do"><b>what we do</b></a></li>
                     <li class="nav-item"><a href="#our_results"><b>our results</b></a></li>
                     <li class="nav-item"><a href="#contact_us"><b>contact us</b></a></li>
                 </ul>
-                <div class="toggle_btn">
-                    <i class="fa-sharp fa-regular fa-bars-sort"></i>
-                </div>
             </div>
         </nav>
-        <div class="paragraphs">
+        <div class="wrapper">
             <h1 class="h1"><b>Lorem ipsum dolor set amet lorem ipsum</b></h1>
             <p class="p1">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
             <input type="button" class="button" value="CALL TO ACTION">
@@ -64,6 +66,7 @@
             <section class="icons_part">
                 <div class="icons">
                     <div>
+                        <span class="holberton_school-icon-ic_sound"></span>
                         <img src="headphones/images/sound-frecuency.png" alt="sound-frecuency">
                         <h2>
                             Lorem ipsum
@@ -73,6 +76,7 @@
                         </p>
                     </div>
                     <div>
+                        <span class="holberton_school-icon-ic_video"></span>
                         <img src="headphones/images/video.png" alt="video icon">
                         <h2>
                             Lorem ipsum
@@ -82,7 +86,8 @@
                         </p>
                     </div>
                     <div>
-                       <img src="headphones/images/music.png" alt="music icon">
+                        <span class="holberton_school-icon-ic_music"></span>
+                        <img src="headphones/images/music.png" alt="music icon">
                         <h2>
                             Lorem ipsum
                         </h2>
@@ -91,7 +96,8 @@
                         </p>
                     </div>
                     <div>
-                       <img src="headphones/images/hearing.png" alt="hearing logo">
+                        <span class="holberton_school-icon-ic_hearing"></span>
+                        <img src="headphones/images/hearing.png" alt="hearing logo">
                         <h2>
                             Lorem ipsum
                         </h2>
@@ -122,37 +128,37 @@
 
                 </section>
                 <section class="pentagon_section">
-                    <div>
-                        <h3>
+                    <div class="pentagon">
+                        <span>
                             +2%
-                        </h3>
+                        </span>
                         <p>
                             Lorem ipsum dolor
                         </p>
                     </div>
 
-                    <div>
-                        <h3>
+                    <div class="pentagon">
+                        <span>
                             +2%
-                        </h3>
+                        </span>
                         <p>
                             Lorem ipsum dolor
                         </p>
                     </div>
 
-                    <div>
-                        <h3>
+                    <div class="pentagon">
+                        <span>
                             +2%
-                        </h3>
+                        </span>
                         <p>
                             Lorem ipsum dolor
                         </p>
                     </div>
 
-                    <div>
-                        <h3>
+                    <div class="pentagon">
+                        <span>
                             +2%
-                        </h3>
+                        </span>
                         <p>
                             Lorem ipsum dolor
                         </p>
@@ -191,6 +197,6 @@
                 </div>
 
             </section>
+        </main>
 </body>
-
 </html>
